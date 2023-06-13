@@ -1,3 +1,18 @@
+body {
+  color: white;
+  background: black;
+}
+
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2rem;
+  padding-top: 0.5rem;
+}
+
+p {
+  font-family: 'Popi', sans-serif;
+}
+
 #headerNav {
   position: fixed;
   top: 0;
@@ -14,12 +29,6 @@
   transform: translateY(-100%);
   transition: transform 0.3s ease;
   z-index: 100;
-}
-
-.my-page {
-  color: white;
-  background: black;
-  margin-bottom: 10rem;
 }
 
 .nav-link {
@@ -74,20 +83,10 @@
  margin-top: -1rem;
 }
 
-h2 {
-  font-family: 'Raleway', sans-serif;
-  font-size: 2rem;
-  padding-top: 0.5rem;
-}
-
-h3 {
+.content h3 {
   font-family: 'Popi', sans-serif;
   font-size: 2rem;
   padding-top: 0.5rem;
-}
-
-p {
-  font-family: 'Popi', sans-serif;
 }
 
 .content p {
@@ -259,8 +258,6 @@ p {
   transition-delay: 0.2s;
 }
 
-
-
 .section-header {
   font: 300 60px 'Popins', sans-serif;
   text-transform: uppercase;
@@ -281,7 +278,7 @@ p {
 .form-horizontal {
   /*float: left;*/
   max-width: 400px;
-  font-family: ;
+  font-family: 'Popins', sans-serif;
   font-weight: 400;
 }
 
@@ -363,7 +360,6 @@ textarea {
   color: #fff;
   text-decoration: none;
 }
-
 
 /* Social Media Icons */
 .social-media-list {
@@ -463,13 +459,12 @@ hr {
   .direct-contact-container, .form-wrapper {
     float: none;
     margin: 0 auto;
-  }  
+  }
+
   .form-control, textarea {
-    
     margin: 0 auto;
   }
- 
-  
+
   .name, .email, textarea {
     width: 280px;
   } 
@@ -492,11 +487,41 @@ hr {
     height: 55px;
     line-height: 55px;
   }
-  
 }
 
 @media screen and (max-width: 410px) {
   .send-button {
     width: 99%;
   }
+}
+
+footer {
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  background: linear-gradient(to right, #00093c, #2d0b00);
+  color: #F5F5F5;
+  padding: 100px 0 30px;
+  border-top-left-radius: 125px;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.line {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.column { 
+  flex-basis: 25%;
+  padding: 10px;
+}
+
+.logo { 
+  width: 80px;
+  margin-bottom: 30px;
 }

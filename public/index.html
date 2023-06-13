@@ -36,7 +36,7 @@
 
 </head>
 
-<body class="my-page">
+<body">
   <!-- Contenido del cuerpo de tu página -->
   <header class="back-imagen">
     <nav class="navbar navbar-expand-lg navbar-dark p-0 align-items-center" id="headerNav">
@@ -59,7 +59,7 @@
           </li>
           <li class="nav-item d-none d-lg-block">
             <a class="nav-link mx-2" href="#">
-              <img src="img/logo.png" srcset="img/logo.webp" height="100" width="90" alt="event_logo/>
+              <img src="img/logo.png" srcset="img/logo.webp" height="100" width="90" alt="event_logo"/>
             </a>
           </li>
           <li class="nav-item">
@@ -379,79 +379,109 @@
           </div>
         </div>
       </div>
-  </section>
     </div>
-    
+  </section>
 
   <section id="information" class="container">
     <h2 class="title-first mt-5 mb-5 text-uppercase">information</h2>
     <div id="map" style="width: 100%; height: 400px;"></div>
   </section>
   
-    <p class="section-header text-center mt-5 py-5">Contact</p>
-    
-    <div class="contact-wrapper">
-    
+  <p class="section-header text-center mt-5 pt-5 pb-3">contact</p>
+
+  <div class="contact-wrapper">
     <!-- Left contact page --> 
-      
-      <form id="contact-form" class="form-horizontal" role="form">
-         
-        <div class="form-group">
-          <div class="col-sm-12">
-            <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
-          </div>
+    <form id="contact-form" class="form-horizontal" role="form">
+      <div class="form-group">
+        <div class="col-sm-12">
+          <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
         </div>
+      </div>
   
-        <div class="form-group">
-          <div class="col-sm-12">
-            <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
-          </div>
+      <div class="form-group">
+        <div class="col-sm-12">
+          <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
         </div>
+      </div>
   
-        <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
+      <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
         
-        <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
-          <div class="alt-send-button">
-            <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
-          </div>
-        
-        </button>
-        
-      </form>
+      <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+        <div class="alt-send-button">
+          <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+        </div>    
+      </button>      
+    </form>
       
     <!-- Left contact page --> 
-      
-        <div class="direct-contact-container">
-  
-          <ul class="contact-list">
-            <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Málaga, Spain</span></i></li>
+      <div class="direct-contact-container ">
+        <ul class="contact-list">
+          <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Málaga, Spain</span></i></li>
+
+          <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call">+34 555 2368</a></span></i></li>
             
-            <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call">(34) 555-2368</a></span></i></li>
-            
-            <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">comunication@actiongroup.com</a></span></i></li>
-            
-          </ul>
+          <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">comunication@novaproject.com</a></span></i></li> 
+        </ul>
+
+        <hr>
+        <ul class="social-media-list">
+          <li><a href="#" target="_blank" class="contact-icon">
+            <i class="fa fa-github" aria-hidden="true"></i></a>
+          </li>
+          <li><a href="#" target="_blank" class="contact-icon">
+            <i class="fa fa-codepen" aria-hidden="true"></i></a>
+          </li>
+          <li><a href="#" target="_blank" class="contact-icon">
+            <i class="fa fa-twitter" aria-hidden="true"></i></a>
+          </li>
+          <li><a href="#" target="_blank" class="contact-icon">
+            <i class="fa fa-instagram" aria-hidden="true"></i></a>
+          </li>       
+        </ul>
+        <hr>
   
-          <hr>
-          <ul class="social-media-list">
-            <li><a href="#" target="_blank" class="contact-icon">
-              <i class="fa fa-github" aria-hidden="true"></i></a>
-            </li>
-            <li><a href="#" target="_blank" class="contact-icon">
-              <i class="fa fa-codepen" aria-hidden="true"></i></a>
-            </li>
-            <li><a href="#" target="_blank" class="contact-icon">
-              <i class="fa fa-twitter" aria-hidden="true"></i></a>
-            </li>
-            <li><a href="#" target="_blank" class="contact-icon">
-              <i class="fa fa-instagram" aria-hidden="true"></i></a>
-            </li>       
-          </ul>
-          <hr>
-  
-          <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
+        <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
+      </div>
+  </div>
+
+  <footer>
+    <div class="line">
+      <div class="column">
+        <img src="img/logo.png" class="logo">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi neque aspernatur minima praesentium modi autem rerum. Facilis labore veritatis dolor?</p>
+      </div>
+      <div class="column">
+        <h3>Central</h3>
+        <p>Andalucia Avenue</p>
+        <p>Málaga, CP 29003, Spain</p>
+        <p class="enmail-id">info@novaproject.com</p>
+        <h4>+34 555 2368</h4>
+      </div>
+      <div class="column">
+        <h3>Links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#tournaments-section">Tournaments</a></li>
+          <li><a href="#teams-section">Teams</a></li>
+          <li><a href="#information">Information</a></li>
+        </ul>
+      </div>
+      <div class="column">
+        <h3>Newsletter</h3>
+        <form>
+          <i class="bi bi-envelope-fill"></i>
+          <input type="email" placeholder="Enter your enmail-id" required>
+          <button type="submit"><i class="arrow bi bi-arrow-right-circle-fill"></i></button>
+        </form>
+        <div class="social-icons">
+          <i class="bi bi-facebook"></i>
+          <i class="bi bi-twitter"></i>
+          <i class="bi bi-whatsapp"></i>
+          <i class="bi bi-pinterest"></i>
         </div>
+      </div>
     </div>
+  </footer>
   
   <!-- Enlaces a Moment.js y tu archivo JavaScript personalizado -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
