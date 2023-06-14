@@ -10,7 +10,7 @@ h2 {
 }
 
 p {
-  font-family: 'Popi', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 #headerNav {
@@ -84,7 +84,7 @@ p {
 }
 
 .content h3 {
-  font-family: 'Popi', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 2rem;
   padding-top: 0.5rem;
 }
@@ -164,10 +164,12 @@ p {
 }
 
 .card-custom-second p {
+  overflow-wrap: break-word;
   line-height: 1.25;
 }
 
 .icon-cards {
+  overflow-wrap: break-word;
   font-size: 4rem;
 }
 
@@ -259,7 +261,7 @@ p {
 }
 
 .section-header {
-  font: 300 60px 'Popins', sans-serif;
+  font: 300 60px 'Poppins', sans-serif;
   text-transform: uppercase;
   letter-spacing: 6px;
 }
@@ -278,7 +280,7 @@ p {
 .form-horizontal {
   /*float: left;*/
   max-width: 400px;
-  font-family: 'Popins', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
 }
 
@@ -307,7 +309,7 @@ textarea {
 .send-text {
   display: block;
   margin-top: 10px;
-  font: 700 12px 'Lato', sans-serif;
+  font: 700 12px 'Poppins', sans-serif;
   letter-spacing: 2px;
 }
 
@@ -333,21 +335,21 @@ textarea {
 }
 
 .contact-text {
-  font: 300 18px 'Lato', sans-serif;
+  font: 300 18px 'Poppins', sans-serif;
   letter-spacing: 1.9px;
   color: #bbb;
 }
 
 .place {
-  margin-left: 62px;
+  margin-left: 30px;
 }
 
 .phone {
-  margin-left: 56px;
+  margin-left: 26px;
 }
 
 .gmail {
-  margin-left: 53px;
+  margin-left: 23px;
 }
 
 .contact-text a {
@@ -501,7 +503,8 @@ footer {
   bottom: 0;
   background: linear-gradient(to right, #00093c, #2d0b00);
   color: #F5F5F5;
-  padding: 100px 0 30px;
+  padding: 50px 0 15px;
+  margin-top: 50px;
   border-top-left-radius: 125px;
   font-size: 13px;
   line-height: 20px;
@@ -519,9 +522,162 @@ footer {
 .column { 
   flex-basis: 25%;
   padding: 10px;
+  position: relative;
+}
+
+.column:nth-child(2), .column:nth-child(3){
+  flex-basis: 15%;
 }
 
 .logo { 
-  width: 80px;
   margin-bottom: 30px;
+}
+
+.column p {
+  margin-bottom: 0;
+}
+
+.column h3 {
+  width: fit-content;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.enmail-id {
+  width: fit-content;
+  border-bottom: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+ul {
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+  margin-bottom: 12px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #F5F5F5;
+}
+
+.form-footer {
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 50px;
+}
+
+.form-footer .bi {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.form-footer input {
+  width: 100%;
+  background: transparent;
+  color: #F5F5F5;
+  border: 0;
+  outline: none;
+}
+
+.form-footer button {
+  background: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.form-footer button .arrow {
+  font-size: 16px;
+  color: #F5F5F5;
+}
+
+.social-icons {
+  display: flex;
+}
+
+.social-icons .icon-container {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.social-icons .icon-container:first-child {
+  margin-left: 0;
+}
+
+.social-icons .icon-container:not(:first-child) {
+  margin-left: 10px;
+}
+
+.social-icons .icon-container i {
+  font-size: 20px;
+  color: #000;
+}
+
+hr {
+  width: 90%;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  margin: 20px auto;
+}
+
+.copyright {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: #F5F5F5;
+}
+
+.underline-text {
+  width: 50%;
+  height: 5px;
+  background: #767676;
+  border-radius: 3px;
+  position: absolute;
+  top: 45px;
+  left: 0;
+  overflow: hidden;
+}
+
+.underline-text span {
+  width: 15px;
+  height: 100%;
+  background: #fff;
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  animation: moving 2s linear infinite;
+}
+
+@keyframes moving {
+  0% {
+    left: -20px;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@media (max-width: 700px){
+  footer{
+    bottom: unset;
+  }
+  .column { 
+    flex-basis: 25%;
+  }
+  .column:nth-child(2), .column:nth-child(3){
+    flex-basis: 100%;
+  }
 }

@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Landing Page of a Fake Event">
+
   <title>ActionGroup</title>
 
   <!-- Enlaces a Bootstrap -->
@@ -390,6 +392,7 @@
   <p class="section-header text-center mt-5 pt-5 pb-3">contact</p>
 
   <div class="contact-wrapper">
+
     <!-- Left contact page --> 
     <form id="contact-form" class="form-horizontal" role="form">
       <div class="form-group">
@@ -408,79 +411,91 @@
         
       <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
         <div class="alt-send-button">
-          <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+          <i class="bi bi-send"></i><span class="send-text">SEND</span>
         </div>    
       </button>      
     </form>
       
-    <!-- Left contact page --> 
+    <!-- Right contact page --> 
       <div class="direct-contact-container ">
         <ul class="contact-list">
-          <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Málaga, Spain</span></i></li>
+          <li class="list-item"><i class="bi bi-geo-alt fa-2x"><span class="contact-text place">Málaga, Spain</span></i></li>
 
-          <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call">+34 555 2368</a></span></i></li>
+          <li class="list-item"><i class="bi bi-telephone"><span class="contact-text phone"><a href="tel:+34 555 2368" title="Give me a call">+34 555 2368</a></span></i></li>
             
-          <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">comunication@novaproject.com</a></span></i></li> 
+          <li class="list-item"><i class="bi bi-envelope"><span class="contact-text gmail"><a href="mailto:comunication@novaproject.com" title="Send me an email">comun@novaproject.com</a></span></i></li> 
         </ul>
 
         <hr>
         <ul class="social-media-list">
-          <li><a href="#" target="_blank" class="contact-icon">
-            <i class="fa fa-github" aria-hidden="true"></i></a>
+          <li><a href="#" target="_blank" class="contact-icon" aria-label="Enlace a contacto">
+            <i class="bi bi-facebook" aria-hidden="true"></i></a>
           </li>
-          <li><a href="#" target="_blank" class="contact-icon">
-            <i class="fa fa-codepen" aria-hidden="true"></i></a>
+          <li><a href="#" target="_blank" class="contact-icon" aria-label="Enlace a Twitter">
+            <i class="bi bi-twitter" aria-hidden="true"></i></a>
           </li>
-          <li><a href="#" target="_blank" class="contact-icon">
-            <i class="fa fa-twitter" aria-hidden="true"></i></a>
+          <li><a href="#" target="_blank" class="contact-icon" aria-label="Enlace a Whatsapp">
+            <i class="bi bi-whatsapp" aria-hidden="true"></i></a>
           </li>
-          <li><a href="#" target="_blank" class="contact-icon">
-            <i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <li><a href="#" target="_blank" class="contact-icon" aria-label="Enlace a Pinterest">
+            <i class="bi bi-pinterest" aria-hidden="true"></i></a>
           </li>       
         </ul>
         <hr>
-  
-        <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
       </div>
   </div>
 
   <footer>
     <div class="line">
       <div class="column">
-        <img src="img/logo.png" class="logo">
+        <img src="img/logo.png" class="logo" alt="logo" height="100" width="90";>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi neque aspernatur minima praesentium modi autem rerum. Facilis labore veritatis dolor?</p>
       </div>
       <div class="column">
-        <h3>Central</h3>
-        <p>Andalucia Avenue</p>
+        <p class="fs-4">Central<div class="underline-text"><span></span></div></p>
+        <p class="pt-5">Andalucia Avenue</p>
         <p>Málaga, CP 29003, Spain</p>
         <p class="enmail-id">info@novaproject.com</p>
-        <h4>+34 555 2368</h4>
+        <p>+34 555 2368</p>
       </div>
       <div class="column">
-        <h3>Links</h3>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#tournaments-section">Tournaments</a></li>
-          <li><a href="#teams-section">Teams</a></li>
-          <li><a href="#information">Information</a></li>
-        </ul>
-      </div>
-      <div class="column">
-        <h3>Newsletter</h3>
-        <form>
-          <i class="bi bi-envelope-fill"></i>
-          <input type="email" placeholder="Enter your enmail-id" required>
-          <button type="submit"><i class="arrow bi bi-arrow-right-circle-fill"></i></button>
-        </form>
-        <div class="social-icons">
-          <i class="bi bi-facebook"></i>
-          <i class="bi bi-twitter"></i>
-          <i class="bi bi-whatsapp"></i>
-          <i class="bi bi-pinterest"></i>
+        <p class="fs-4">Links <div class="underline-text"><span></span></div></p>
+        <div class="pt-5">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#tournaments-section">Tournaments</a></li>
+            <li><a href="#teams-section">Teams</a></li>
+            <li><a href="#information">Information</a></li>
+          </ul>
         </div>
       </div>
-    </div>
+    
+      <div class="column">
+        <p class="fs-4">Newsletter <div class="underline-text"><span></span></div></p>
+          <form class="form-footer pt-5">
+            <i class="bi bi-envelope-fill"></i>
+            <input type="email" placeholder="Enter your enmail-id" required>
+            <button type="submit" aria-label="Enviar formulario"><i class="arrow bi bi-arrow-right-circle-fill"></i></button>
+          </form>
+          <div class="social-icons">
+            <div class="icon-container">
+              <i class="bi bi-facebook"></i>
+            </div>
+            <div class="icon-container">
+              <i class="bi bi-twitter"></i>
+            </div>
+            <div class="icon-container">
+              <i class="bi bi-whatsapp"></i>
+            </div>
+            <div class="icon-container">
+              <i class="bi bi-pinterest"></i>
+            </div>
+          </div>        
+        </div>
+      </div> <!-- Cierre del div "line" -->
+    </div> <!-- Cierre del div principal -->    
+    <hr>
+    <p class="copyright">David Zurita &copy; Sánchez 2023- All Rights Reserved</p>
   </footer>
   
   <!-- Enlaces a Moment.js y tu archivo JavaScript personalizado -->
